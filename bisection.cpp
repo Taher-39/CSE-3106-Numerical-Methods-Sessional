@@ -3,9 +3,6 @@ using namespace std;
 #define EPSILON 0.001
 
 double equation(double x){
-    // double a, b, c, p1, p2, p3;
-    // a = -2; b =  6; c = 23;
-    // p1 = 3; p2 = 1; p3 = 0;
 
     return -2*x*x*x + 6*x + 23;
 }
@@ -29,14 +26,16 @@ void bisection(double a, double b) {
         else
             a = x;
     }
-    cout << "Root is : " << x;
+    cout << "Root is : " << x <<endl;
 
 
 }
 
 int main(){
     double a, b;
+	cout<<"Enter a: ";
     cin >> a;
+	cout<<"Enter b: ";
     cin >> b;
     bisection(a, b);
     return 0;
