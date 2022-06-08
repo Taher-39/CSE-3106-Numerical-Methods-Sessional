@@ -3,8 +3,7 @@ using namespace std;
 #define EPSILON 0.001
 
 double equation(double x){
-
-    return -2*x*x*x + 6*x + 23;
+    return x*x*x - x - 1;
 }
 
 void bisection(double a, double b) {

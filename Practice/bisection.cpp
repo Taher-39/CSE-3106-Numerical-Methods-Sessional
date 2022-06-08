@@ -11,8 +11,9 @@ double bisection(double a, double b, double E){
         while (abs(b-a) >= E){
             x = (a + b) / 2;
 
-            if(eq(x) == 0.0)
+            if(eq(x) == 0.0){
                 break;
+            }
             
             else if(eq(x) * eq(a) < 0){
                 b = x;
